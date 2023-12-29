@@ -1,114 +1,85 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   width: 1158px;
-  margin: 0 auto;
   padding: 0 15px;
-  display: flex;
+  margin: 0 auto;
 }
-
-/*-----------------HEADER/*-----------------*/
-
 .header {
-  color: var(--SLATE, #434455);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
+  border-bottom: 1px solid #e7e9fc;
 }
-
-.header-nav {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 40px;
+.header-container {
   display: flex;
   align-items: center;
 }
-.header-logo {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Raleway;
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
-.header-logo-color {
-  color: var(--IRIS, #4d5ae5);
-  font-family: Raleway;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.17; /* 116.667% */
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+.logo-part {
+  color: #2e2f42;
 }
-
-.header-nav-menu {
+.nav-list {
   display: flex;
   gap: 40px;
-  margin-right: 40px;
-  margin-right: 0;
 }
-
-.header-nav-lis {
-}
-
-.header-nav-link {
-  color: var(--NAVY-BLUE, #2e2f42);
+.nav-link {
+  color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-nav-link:active {
+.nav-link:hover,
+.nav-link:focus {
   color: #404bbf;
 }
 
-.header-address {
+.address {
+  font-style: normal;
+  margin-left: auto;
 }
-
-.header-address-menu {
-  padding-left: 30px;
+.address-list {
   display: flex;
   gap: 40px;
-  margin-right: 40px;
-  margin-right: 0;
 }
-
-.header-address-list {
-}
-
-.header-address-link {
+.address-link {
   color: #434455;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.header-address-link:hover,
-.header-address-link:focus,
-.header-address-link:active {
+.address-link:hover,
+.address-link:focus {
   color: #404bbf;
 }
